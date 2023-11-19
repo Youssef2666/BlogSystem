@@ -25,7 +25,7 @@
             </div>
 
             <a class="mt-10 block text-center text-lg text-yellow-500 font-semibold"
-                href="http://127.0.0.1:8000/blog">المزيد من المنشورات</a>
+                href="{{ route('posts.index',['popular'=>'true']) }}">المزيد من المنشورات</a>
         </div>
         <hr>
 
@@ -40,6 +40,6 @@
             </div>
         </div>
         <a class="mt-10 block text-center text-lg text-yellow-500 font-semibold"
-            href="http://127.0.0.1:8000/blog">المزيد من المنشورات</a>
+            href="{{ route('posts.index') }}">المزيد من المنشورات</a>
     </div>
 </x-app-layout>

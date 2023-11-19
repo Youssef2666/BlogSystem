@@ -26,8 +26,8 @@
                     @foreach ($post->categories as $category)
                         <x-posts.category-badge :category="$category" />
                     @endforeach
-                    <div class="flex items-center space-x-4">
-                        <span class="text-gray-500 text-sm">{{ $post->getReadingTime() }} min read</span>
+                    <div class="flex items-center space-x-4 m-1">
+                        <span class="text-gray-500 text-sm">{{ $post->getReadingTime() }} دقيقة للقراءة</span>
                     </div>
                 </div>
                 <div>
